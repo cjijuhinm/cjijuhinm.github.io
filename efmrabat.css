@@ -1,0 +1,77 @@
+header h1 {
+    font-size: 2em;
+  }
+  
+  header h1::first-letter {
+    font-size: 2em;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav a {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: #dddddd;
+    color: #333333;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  article {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  article:hover {
+    border: 1px solid rgb(110, 117, 180);
+    border-radius: 5px;
+    background-color: rgb(212, 215, 238);
+    cursor: pointer;
+  }
+  
+  article button {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  aside {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  label,
+  input,
+  button {
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 450px) {
+    nav ul {
+      display: none;
+    }
+  
+    article button {
+      display: none;
+    }
+  }      
